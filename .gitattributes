@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 *.js linguist-language=php
 *.css linguist-language=php
 *.html linguist-language=php
 
+=======
+*.js linguist-language=PHP
+*.css linguist-language=PHP
+*.html linguist-language=PHP
+>>>>>>> 23dd95ecb990eafd514b813793f8aa2624e2e03a

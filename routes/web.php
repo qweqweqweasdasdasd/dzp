@@ -31,6 +31,7 @@ Route::group(['middleware'=>'UseCheck'],function(){
 	//提交用户集卡兑换
 	Route::post('/user/tijiao','User\UserController@tijiao');
 
+
 });
 
 //管理后台登录
