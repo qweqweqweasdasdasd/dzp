@@ -1,0 +1,178 @@
+@charset "utf-8";
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	min-width: 1250px;
+	background: url("../images/bg-1.png") no-repeat center/100% 100%;
+}
+#wrap{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+/* 头部区域 */
+#wrap #header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	min-width: 1250px;
+	width: 100%;
+	height: 70px;
+	background-color: rgba(45,49,61,.7);
+}
+#wrap #header .header-content{
+	position: relative;
+	width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+}
+#header .header-content p{
+	position: absolute;
+	top: 0px;
+	right: 78%;
+	width: 20%;
+	height: 100%;
+	line-height: 70px;
+	color: #fff;
+	font-size: 22px;
+}
+#header .header-content .title{
+	position: absolute;
+	top: 6px;
+	right: 1.5%;
+	width: 20%;
+	height: 80%;
+}
+.header-content .title ul{
+	-webkit-display: flex;
+	-moz-display: flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	text-align: center;
+	line-height: 40px;
+}
+.header-content .title ul li{
+	width: 50%;
+	height: 100%;
+	line-height: 59px;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 2px;
+	cursor: pointer;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.header-content .title ul li:hover{
+	-webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+	-moz-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+}
+.header-content .title ul li:nth-child(1){
+	background:url("../images/login.png") no-repeat center/100% 100%;
+}
+.header-content .title ul li:nth-child(2){
+	background:url("../images/user.png") no-repeat center/100% 100%;
+}
+/* 头部区域结束 */
+/* 主体区域 */
+#wrap #main{
+	overflow: hidden;
+	width: 100%;
+}
+#wrap #main .main-content{
+	width: 1250px;
+	margin: 0 auto;
+}
+.word{
+	position: relative;
+	width: 1250px;
+	height: 350px;
+	margin: auto;
+	background:url("../images/rotate.png") no-repeat center/100% 100%;
+}
+.word .w-wrap{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	top: 0px;
+	z-index: -1;
+	width: 1250px;
+	height: 350px;
+	background:url("../images/bg-2.png") no-repeat center/cover ;
+}
+/* 修改密码 */
+#main .main-content .turntable{
+	position: relative;
+	width: 100%;
+	padding: 60px 0 140px 0 ;
+	background:url("../images/bg-2.png") no-repeat center/cover;
+}
+.turntable p{
+	width: 100%;
+	height: 80px;
+	margin-top: -50px;
+	margin-left: 40px;
+	font-size: 26px;
+	line-height: 80px;
+	color: #fff;
+	font-weight: bold;
+}
+.main-content .turntable form{
+	width: 50%;
+	height: 400px;
+	padding: 40px 0;
+	margin: auto;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../images/record-bg.png") no-repeat center/100% 100%;
+}
+.main-content .turntable form ul{
+	width: 50%;
+	margin-top:50px;
+	margin-left: 35%;
+}
+.turntable form ul li .form-label{
+	font-size: 16px;
+	margin: 5px 0;
+	color: #283B78;
+}
+form ul li input{
+	font-size: 16px;
+}
+.text-center input{
+	width: 30%;
+	margin-top: 30px;
+	margin-left: 45px;
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+	background-color: #299999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.text-center input:hover{
+	webkit-box-shadow: 0 3px 25px 1px rgba(0, 0, 0, .2) inset;
+	-moz-box-shadow: 0 3px 25px 1px rgba(0, 0, 0, .2) inset;
+	box-shadow: 0 3px 25px 1px rgba(0, 0, 0, .2) inset;
+}

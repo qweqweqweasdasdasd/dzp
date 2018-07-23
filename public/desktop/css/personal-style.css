@@ -1,0 +1,420 @@
+@charset "utf-8";
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	min-width: 1250px;
+	background: url("../images/bg-1.png") no-repeat center/100% 100%;
+}
+#wrap{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+/* 头部区域 */
+#wrap #header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	min-width: 1250px;
+	width: 100%;
+	height: 70px;
+	background-color: rgba(45,49,61,.7);
+}
+#wrap #header .header-content{
+	position: relative;
+	width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+}
+#header .header-content p{
+	position: absolute;
+	top: 0px;
+	right: 79%;
+	width: 20%;
+	height: 100%;
+	line-height: 70px;
+	color: #fff;
+	font-size: 22px;
+}
+#header .header-content .title{
+	position: absolute;
+	top: 7px;
+    right: 1.5%;
+	width: 10%;
+	height: 100%;
+}
+.header-content .title ul{
+	-webkit-display: flex;
+	-moz-display: flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	text-align: center;
+	line-height: 40px;
+}
+.header-content .title ul li{
+	width: 100%;
+	height: 80%;
+	background:url("../images/login.png") no-repeat center/100% 100%;
+	line-height: 59px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 2px;
+	cursor: pointer;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.header-content .title ul li:hover{
+	-webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+	-moz-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
+}
+/* 头部区域结束 */
+/* 主体区域 */
+#wrap #main{
+	overflow: hidden;
+	width: 100%;
+}
+#wrap #main .main-content{
+	width: 1250px;
+	margin: 0 auto;
+}
+.word{
+	position: relative;
+	width: 1250px;
+	height: 350px;
+	margin: auto;
+	background:url("../images/rotate.png") no-repeat center/100% 100%;
+}
+.word .w-wrap{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	top: 0px;
+	z-index: -1;
+	width: 1250px;
+	height: 350px;
+	background:url("../images/bg-2.png") no-repeat center/cover ;
+}
+#main .main-content .turntable{
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+	background:url("../images/bg-2.png") no-repeat center/cover;
+}
+.main-content .turntable .top{
+	width: 100%;
+	height: 80px;
+}
+/* 左侧选项区域 */
+.main-content .turntable .option{
+	width: 15%;
+	height: 500px;
+	margin-left: 10%;
+	text-align: center;
+	background: url("../images/left-bar.png") no-repeat center/100% 100%;
+}
+.turntable .option p{
+	width: 100%;
+	height: 80px;
+	font-size: 26px;
+	line-height: 80px;
+	color: #fff;
+	font-weight: bold;
+}
+.turntable .option ul{
+	width: 100%;
+	margin-top: 20%;
+}
+.turntable .option ul li{
+	width: 100%;
+	height: 70px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 70px;
+	color: #DA3A4F;
+	cursor: pointer;
+}
+.option ul li i{
+	margin-right: 5px;
+	font-size: 18px;
+	color: #DA3A4F;
+}
+.option ul li span{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+}
+.turntable .option ul li span:after{
+	position: absolute;
+	left:50%;
+	bottom: 15%;
+	width:0;
+	height:2px;
+	background-color:#9A2A39;
+	content: "";
+	transition: .5s;
+}
+.turntable .option ul li .focus:after{
+	width:100%;
+	left:0;
+}
+/* 用户抽奖信息 */
+.turntable .right-content{
+	display: none;
+}
+.turntable .right-content.on{
+	display: block;
+}
+.turntable .right-content1{
+	position: absolute;
+	top: 50px;
+	right: 10%;
+	width: 60%;
+	padding:20px 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../images/record-bg.png") no-repeat center/100% 100%;
+}
+.turntable .right-top{
+	width: 100%;
+	height: 40px;
+	padding-bottom: 20px ;
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
+	font-size: 30px;
+	line-height: 40px;
+	text-indent: 30px;
+	color: #fff;
+}
+.turntable .right-top i{
+	float: left;
+	font-size: 26px;
+	color: #fff;
+}
+.right-content1 .right-main{
+	padding: 4% 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.right-content1 .right-main table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+.right-main table th{
+	color: #DA3A4F;
+	font-size: 18px;
+	line-height: 40px;
+}
+.right-main table td{
+	color: #000;
+	line-height: 30px;
+}
+.right-main table tbody tr:nth-child(odd){
+	background-color: rgba(0, 0, 0, .1);
+}
+/* 碎片获取信息 */
+.turntable .right-content2{
+	position: absolute;
+	top: 50px;
+	right: 10%;
+	width: 60%;
+	height: 83.5%;
+	padding:20px 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../images/suipian-bg.png") no-repeat center/cover;
+}
+.turntable .right-content2 .suipian-info{
+	position: absolute;
+	left: 4%;
+	bottom: 30%;
+	width: 65%;
+	height: 40%;
+	margin-top: 4%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.right-content2 .suipian-info>div{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 67%;
+	background-color: red;
+	border-collapse: collapse;
+	border: none;
+	color: #fff;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.right-content2 .suipian-info>div p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	line-height: 25px;
+	text-indent: 3px;
+	text-align: center;
+	background-color: rgba(0,0,0,.7);
+}
+.right-content2 .suipian-info>div img{
+	width: 100%;
+	height: 100%;
+}
+.suipian-info>div p span{
+	margin-left: 1px;
+	color: #fff;
+}
+.right-content2 .exchange{
+	position: relative;
+	width: 28%;
+	height: 70%;
+	min-height: 300px;
+	margin-top: 10%;
+	color: #fff;
+	text-indent: 30px;
+	font-size: 16px;
+}
+.right-content2 .exchange input{
+	position: absolute;
+	bottom: 5%;
+	left: 25%;
+	width: 60%;
+	height: 15%;
+	background: url("../images/btn.png") no-repeat center/100% 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.right-content2 .exchange-hidden{
+	display: none;
+	position: absolute;
+	top: 0;
+	left:10%;
+	width: 400px;
+	height: 250px;
+	padding: 40px;
+	background: url("../images/login-bg.png");
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.right-content2 .exchange-hidden p{
+	font-size: 20px;
+	color: rgba(0, 0, 0, .7);
+}
+.right-content2 .exchange-hidden .txt{
+	display: block;
+	width: 200px;
+	margin: 30px auto;
+	font-size: 18px;
+}
+.right-content2 .exchange-hidden .btn{
+	display: block;
+	width: 100px;
+	margin: 40px auto 30px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #299999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.right-content2 .exchange-hidden .btn:hover{
+	box-shadow: 0 3px 25px 1px rgba(0, 0, 0, .2) inset;
+}
+.right-content2 .exchange-hidden i{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 20px;
+	background: url("../images/login-close1.png") no-repeat center/100% 100%;
+}
+.right-content2 .exchange-hidden i:hover{
+	background-image: url('../images/login-close2.png');
+}
+/* 个人信息设置 */
+.turntable .right-content3{
+	position: absolute;
+	top: 50px;
+	right: 10%;
+	width: 60%;
+	height: 83%;
+	padding:20px 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../images/record-bg.png") no-repeat center/100% 100%;
+}
+.turntable .right-content3 .user-info{
+	width: 65%;
+	height: 40%;
+	margin-top: 4%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.right-content3 .user-info ul{
+	width: 100%;
+	margin-left: 10%;
+}
+.right-content3 .user-info ul li{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	color: #283B78;
+}
+.user-info ul li p,.user-info ul li a{
+	font-size: 18px;
+	font-weight: bold;
+}
+.user-info ul li span{
+	font-size: 16px;
+	color: rgba(0, 0, 0, .6);
+}
+.user-info ul li a{
+	position: relative;
+	color: #DA3A4F;
+}
+.user-info ul li a:after{
+	position: absolute;
+	left:50%;
+	bottom: -10px;
+	width:0;
+	height:2px;
+	background-color:#9A2A39;
+	content: "";
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.user-info ul li a:hover:after{
+	width:100%;
+	left:0;
+}
+/* 主体区域结束 */
