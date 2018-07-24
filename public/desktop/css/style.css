@@ -268,6 +268,7 @@
 	box-sizing: border-box;
 }
 .login-hidden form{
+	position: relative;
 	width: 100%;
 	height: 100%;
 }
@@ -286,9 +287,11 @@
 	font-size: 20px;
 	vertical-align: middle;
 }
-.login-hidden div>.icon-zhanghao{
-	font-size: 18px;
-	top:6px;
+#login div>i{
+	font-size: 20px;
+}
+.login-hidden div>.icon-zhanghao1{
+	top:4px;
 }
 .login-hidden div>.iconfont.on{
 	color: #299999;
@@ -328,7 +331,7 @@
 .login-hidden div>input:focus{
 	border-color: #299999;
 }
-.login-hidden button{
+#login button{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -337,6 +340,7 @@
 	height: 40px;
 	margin: auto;
 	background-color: #299999;
+	border: none;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -345,56 +349,31 @@
 	line-height: 40px;
 	text-align: center;
 	letter-spacing: 20px;
+	outline: none;
 	cursor: pointer;
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	-o-transition: .2s;
-	-ms-transition: .2s;
-	transition: .2s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	-ms-transition: .3s;
+	transition: .3s;
 }
-.login-hidden a:hover{
+#login button:hover{
 	-webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
 	-moz-box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
 	box-shadow: 0 0 20px 1px rgba(0, 0, 0, .3) inset;
 }
-/* .login-hidden form>a{
+#login .none{
 	position: absolute;
-	bottom: 60px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 350px;
-	height: 40px;
-	z-index: 3;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	background-color: transparent;
-	font-size: 0;
-	outline: none;
-	border: none;
-	cursor: pointer;
-} */
-.login-hidden form>i{
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-	width: 40px;
-	height: 20px;
-	background:url("../images/login-close1.png") no-repeat center/100% 100%;
-	color: #000;
-	line-height: 30px;
-	text-align: center;
-	cursor: pointer;
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	-o-transition: .2s;
-	-ms-transition: .2s;
-	transition: .2s;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: url(/desktop/images/login-close1.png) no-repeat center/cover;
+    transition: .3s ;
 }
-.login-hidden form>i:hover{
-	background-image: url("../images/login-close2.png");
+#login .none:hover{
+	background-image: url(/desktop/images/login-close2.png);
 }
 /* 弹出登录界面结束 */
 /* 宫格转盘 */

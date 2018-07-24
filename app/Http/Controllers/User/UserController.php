@@ -280,13 +280,17 @@ class UserController extends Controller
             $dataAll['phone'] = $phone;
             //dd($dataAll);
             //删除抽奖记录里面的数据
-            $has_del_data = array_keys($data_arr);
+            $has_del_data = array_keys($temp_arr);
             //循环删除
+            //dd($temp_arr);
             for($i = 0; $i < count($has_del_data);$i++){
                 Prize_logs::where([['mem_no',$user],['prize_id',$has_del_data[$i]]])->limit($min)->delete();    
             }
             //疯狂删除数据
-            return ['code'=>1,'data'=>$dataAll];
+            if($min){
+                return ['code'=>1,'data'=>$dataAll];
+            }
+            return ['code'=>0];
             //        == 提交之后减去数量,(1获取需要减去的数量在彩金logs 内) 记录保存到另一张表上 后台添加一个实时读取的栏目
     }
 
@@ -297,6 +301,10 @@ class UserController extends Controller
                 $prize_id[] = DB::table('sudoku')->where('id',$card_arr_0[$i])->value('prize_id');      
             }
             //如果设置卡片的IDS之和 等于 抽奖的集卡id之和则符合活动一
+            //dd(array_sum(array_keys($allcard)));
+            if(count($prize_id) != count(array_keys($allcard))){
+                return ['code'=>0,'不符合活动一'];
+            }
             if(array_sum($prize_id) == array_sum(array_keys($allcard))){
                 $min = min($allcard);
                 foreach($allcard as $k=>$v){

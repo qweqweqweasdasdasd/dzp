@@ -23,7 +23,7 @@
           oColor1.className+=" on";
         }
         oAccount.onblur=function(){
-          oColor1.className="iconfont icon-zhanghao";
+          oColor1.className="iconfont icon-zhanghao1";
         }
         oPass.onfocus=function(){
           oColor2.className+=" on";

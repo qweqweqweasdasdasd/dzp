@@ -141,27 +141,21 @@ $('input[class="btn"]').click(function(){
 			if(data != false){
 				//debugger;
 				
-				if(data.huodong_1.code == 1){
-					var user = data.huodong_1.data.user;
-					var phone = data.huodong_1.data.phone;
+				if(data.huodong_1.code == 1 && data.huodong_2.code ==1){
 					var msg1 = data.huodong_1.data.huodong_1;
-					var msg2 = "";
+					var msg2 = data.huodong_2.data.huodong_2;
 					_alert();
-				}else{
-					layer.msg('您的卡片不足,请看一下规则进行提交!');
-				}
-				if(data.huodong_2.code == 1){
+				}else if(data.huodong_2.code == 1){
 					var user = data.huodong_2.data.user;
 					var phone = data.huodong_2.data.phone;
 					var msg2 = data.huodong_2.data.huodong_2;
 					var msg1 = "";
 					_alert();
-				}else{
-					layer.msg('您的卡片不足,请看一下规则进行提交!');
-				}
-				if(data.huodong_1.code == 1 && data.huodong_2.code ==1){
+				}else if(data.huodong_1.code ==1){
+					var user = data.huodong_1.data.user;
+					var phone = data.huodong_1.data.phone;
 					var msg1 = data.huodong_1.data.huodong_1;
-					var msg2 = data.huodong_2.data.huodong_2;
+					var msg2 = "";
 					_alert();
 				}else{
 					layer.msg('您的卡片不足,请看一下规则进行提交!');
