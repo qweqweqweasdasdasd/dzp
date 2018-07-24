@@ -92,7 +92,7 @@ class MemberController extends Controller
             $mem_id = Member::insertGetId([             //记录会员
                         'mem_no'=>$mem_no,
                         'mem_name'=>$mem_name,
-                        'mem_pwd'=>$mem_pwd,
+                        'mem_pwd'=>Hash::make($mem_pwd),
                         'mem_mobile'=>$mem_mobile,
                         'mg_name'=>$mg_name,
                         'order'=>$order,
@@ -312,7 +312,7 @@ class MemberController extends Controller
                     }
                 })
                 ->orderBy('jika_id','desc')
-                ->paginate(5);
+                ->paginate(11);
         $count = $data->count();
         return view('admin.member.list',compact('data','count','keyword'));
     }
